@@ -2,17 +2,6 @@ body {
   background-color: #ecf4fc;
 }
 
-.chat-history {
-  background-color: #fafafa;
-  position: relative;
-  display: inline-flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  height: 100%;
-  width: 500px;
-  box-sizing: border-box;
-}
-
 .chat-name {
   font-weight: 600;
   display: 'inline' !important;
