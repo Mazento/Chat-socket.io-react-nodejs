@@ -87,8 +87,8 @@ class Chatroom extends React.Component {
           container
           item xs={6}
           justify="flex-end"
-        >        
-          <Paper className="chat-window" justify = "center">
+        >
+          <Paper className="chat-window" justify="center">
             <List style={{height: 400, overflow: 'auto'}}>
               {
                 this.state.chatHistory.map(

@@ -1,23 +1,16 @@
-const express = require('express');
-const app = express();
+const app = require('express')();
 const server = require('http').Server(app);
 const io = require('socket.io')(server);
-const path = require('path');
 
 // const ChatroomManager = require('./ChatroomManager');
 const Chatroom = require('./Chatroom');
 
 const port = 8080;
-const HTML_FILE = path.join(__dirname, 'index.html')
 // list of user-chatroom pairs
 const usersChatrooms = []
 // list of all chatrooms
 const chatroomList = [];
 
-app.use(express.static(__dirname))
-app.get('*', (req, res) => {
-  res.sendFile(HTML_FILE)
-})
 server.listen(port, error => {
   if (error) throw error;
   console.log(`Listening on port ${port}`);

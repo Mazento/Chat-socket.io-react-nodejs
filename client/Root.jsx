@@ -5,12 +5,14 @@ import Chatroom from './Chatroom';
 
 import io from 'socket.io-client';
 
+const socketURL = 'http://localhost:8080';
+
 class Root extends React.Component {
   constructor(props) {
     super(props)
 
     this.state = {
-      client: io.connect('http://localhost:3000'),
+      client: io.connect(socketURL),
       username: '',
       chatroomURL: '',
       chatHistory: [],
