@@ -1,18 +1,22 @@
 # Chat-socket.io-react-nodejs
 
-```
-Evaluation test app for ForaSoft.
-```
+### Evaluation test app for ForaSoft.
+
 
 **For quick glance: I have deployed this application at the following address:** https://zentari.dev 
 
-**npm install**
+```
+npm install
+```
 
-### Development mode
+## Development mode
 
-**npm run server**
+```
+npm run server
+npm run client
+```
 
-**npm run client**
-
-### Production build
-**npm run build && npm start**
+## Production build
+```
+npm run build && npm start
+```
