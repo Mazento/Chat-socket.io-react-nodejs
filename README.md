@@ -5,13 +5,10 @@
 
 **For quick glance: I have deployed this application at the following address:** https://zentari.dev 
 
-```
-npm install
-```
-
 ## Development mode
 
 ```
+npm install
 npm run server
 npm run client
 ```
